@@ -1,0 +1,5 @@
+﻿Invoice Number,Date,Customer Name,Total Amount,Item Description,Item Quantity,Item Price,Item Total
+INV-001,29-07-2024,John Doe,560,Widget A,2,a50,-
+INV-001,29-07-2024,John Doe,560,Widget B,1,15d0,150
+INV-001,29-07-2024,John Doe,560,Widget C,3,70,
+INV-001,29-07-2024,John Doe,560,Widget D,1,asdf,100
