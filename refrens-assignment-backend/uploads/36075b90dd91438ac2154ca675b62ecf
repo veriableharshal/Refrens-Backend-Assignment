@@ -1,0 +1,19 @@
+﻿Invoice Number,Date,Customer Name,Total Amount,Item Description,Item Quantity,Item Price,Item Total
+INV-001,29-07-2024,John Doe,560,Widget A,2,50,100
+INV-001,29-07-2024,John Doe,560,Widget B,1,150,150
+INV-001,29-07-2024,John Doe,560,Widget C,3,70,210
+INV-001,29-07-2024,John Doe,560,Widget D,1,100,100
+INV-002,30-07-2024,Jane Smith,860,Gadget A,4,200,800
+INV-002,30-07-2024,Jane Smith,860,Gadget B,1,60,60
+INV-003,31-07-2024,Acme Corp,1500,Part A,10,50,500
+INV-003,31-07-2024,Acme Corp,1500,Part B,5,200,1000
+INV-004,01-08-2024,Bob Brown,1200,Tool A,3,300,900
+INV-004,01-08-2024,Bob Brown,1200,Tool B,2,150,300
+INV-005,02-08-2024,Alice Blue,450,Widget X,2,125,250
+INV-005,02-08-2024,Alice Blue,450,Widget Y,1,200,200
+INV-005,02-08-2024,Alice Blue,450,Widget Z,1,0,0
+INV-006,03-08-2024,Charlie Green,300,Device A,2,100,200
+INV-006,03-08-2024,Charlie Green,300,Device B,1,100,100
+INV-007,04-08-2024,Delta Corp,700,Equipment A,1,700,700
+INV-008,05-08-2024,Eve Black,1100,Material A,5,200,1000
+INV-008,05-08-2024,Eve Black,1100,Material B,1,100,100

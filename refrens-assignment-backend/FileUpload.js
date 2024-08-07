@@ -1,5 +1,4 @@
 const path = require("path");
-const multer = require("multer");
 const { processCSV, processExcel } = require("./helpers/fileProcessors");
 
 
@@ -17,8 +16,12 @@ const uploadFile = (req, res) => {
 
   if (ext === ".csv") {
     processCSV(filePath, res);
+    console.log("Invoice is created successfully")
   } else if (ext === ".xlsx") {
+
     processExcel(filePath, res);
+    console.log("Invoice is created successfully")
+  
   } else {
     res.status(400).send("Unsupported file type.");
   }

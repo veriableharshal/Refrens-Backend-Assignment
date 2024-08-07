@@ -10,9 +10,6 @@ const processCSV = (filePath, res) => {
 
   fs.createReadStream(filePath)
     .pipe(csv())
-    .on("headers", (headers) => {
-      // Empty initialization if needed
-    })
     .on("data", (row) => {
       data.push(row);
       console.log(row);
