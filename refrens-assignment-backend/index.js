@@ -1,15 +1,13 @@
 const express = require('express');
 const multer = require('multer');
 const path = require('path');
-const cors = require('cors'); // Import the cors package
-const fileUpload = require('./fileUpload');
+const cors = require('cors'); 
+const fileUpload = require('./FileUpload');
 
 const app = express();
 
-// Enable CORS for all origins
 app.use(cors());
 
-// Set up multer to save files in the 'uploads' directory
 const upload = multer({ dest: path.join(__dirname, 'uploads') });
 
 app.post('/upload', upload.single('file'), fileUpload.uploadFile);
