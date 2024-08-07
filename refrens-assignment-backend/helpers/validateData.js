@@ -1,7 +1,7 @@
 const moment = require("moment");
 
 const validateFileData = (data) => {
-  const errors = [];
+  const errors = [];  
   const invoiceMap = new Map();
 
   data.forEach((row) => {
@@ -23,7 +23,6 @@ const validateFileData = (data) => {
         errorMessage.push(`"${field}" is required`);
       }
     });
-
    
     if (row["Date"] && !moment(row["Date"], "DD-MM-YYYY", true).isValid()) {
       errorMessage.push(`Invalid date "${row["Date"]}"`);
