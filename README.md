@@ -27,10 +27,10 @@ This is an assignment project that allows users to upload their invoices in the 
    
 2. **Install Dependencies:**
    ```bash
-   cd front-end
+   cd refrens-assignment-frontend
    npm install
    cd ..
-   cd back-end
+   cd refrens-assignment-backend
    npm install
    ```
 
