@@ -1,6 +1,3 @@
-Here's the updated `README.md` file with corrections and improvements:
-
----
 
 # Assignment -> Invoice Upload, Validation, and JSON Conversion
 
@@ -30,10 +27,10 @@ This is an assignment project that allows users to upload their invoices in the 
    
 2. **Install Dependencies:**
    ```bash
-   cd front-end
+   cd refrens-assignment-frontend
    npm install
    cd ..
-   cd back-end
+   cd refrens-assignment-backend
    npm install
    ```
 
@@ -53,15 +50,11 @@ This is an assignment project that allows users to upload their invoices in the 
 There are two ways to upload an invoice file:
 
 1. **Using User Interface:**
-   - Click on the "Browse Computer" button to select a file OR you can drag and drop the file.
+   - Click on the "No file selected" button to select a file OR you can drag and drop the file.
    - Click on the "Upload" button to upload the file to the server.
 
-2. **Using a tool like Postman or cURL:**
+2. **Using a tool like Postman**
    - Send a POST request to http://localhost:3000/upload
-   - Example request with cURL:
-     ```bash
-     curl -X POST http://localhost:3000/upload -F 'file=@path/to/your/invoice.csv'
-     ```
 
 ## Error Reporting
 Rows with errors are displayed in a table with all corresponding errors shown in a different column called "Errors."
@@ -79,10 +72,10 @@ Valid invoices are converted into the following JSON structure:
     "customerName": "Ted Mosby",
     "totalAmount": 560,
     "items": [
-      { "description": "Widget A", "quantity": 2, "price": 50, "total": 100 },
-      { "description": "Widget B", "quantity": 1, "price": 150, "total": 150 },
-      { "description": "Widget C", "quantity": 3, "price": 70, "total": 210 },
-      { "description": "Widget D", "quantity": 1, "price": 100, "total": 100 }
+      { "description": "Tool 1", "quantity": 2, "price": 50, "total": 100 },
+      { "description": "Tool 2", "quantity": 1, "price": 150, "total": 150 },
+      { "description": "Tool 3", "quantity": 3, "price": 70, "total": 210 },
+      { "description": "Tool 4", "quantity": 1, "price": 100, "total": 100 }
     ]
   }
   ...
@@ -104,10 +97,8 @@ Valid invoices are converted into the following JSON structure:
 ![Example Invoice](https://github.com/veriableharshal/Refrens-Backend-Assignment/blob/main/Redme_File_Images/Invoice_Page.png)
 
 ## Assumptions & Design Decisions
-1. **About Dataset:** Since I was not provided with data, I researched examples to implement as the dataset. All logic and validations are applied according to this dataset.
+1. **About Dataset:** Since I was not provided with dataset, I researched examples to implement as the dataset. All logic and validations are applied according to the dataset.
 2. **JSON format:** For ease of use, the processed invoice data is formatted in JSON. For example, all invoice items with the same invoice number and date are stored in the same invoice information.
 3. **Date Format:** All dates in the invoice are assumed to be in DD-MM-YYYY format, commonly used in India.
 4. **Numeric Validation:** All numeric fields are validated to be proper numbers, considering potential decimals.
 5. **Front-End Display:** To make it user-friendly, I created a frontend so the invoices can be easily shown to the user, and it is easier for me as a developer to explore potential bugs.
-
----
