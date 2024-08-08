@@ -60,7 +60,7 @@ There are two ways to upload an invoice file:
 Rows with errors are displayed in a table with all corresponding errors shown in a different column called "Errors."
 
 ### Example Error Report
-![Example Error Report](https://github.com/veriableharshal/Refrens-Backend-Assignment/blob/main/Redme_File_Images/Invoice_Error_file.png)
+![Example Error Report](https://github.com/veriableharshal/Refrens-Backend-Assignment/blob/main/Redme_File_Images/InvoiceWithErrorPage.png)
 
 ## JSON Structure
 Valid invoices are converted into the following JSON structure:
@@ -94,7 +94,7 @@ Valid invoices are converted into the following JSON structure:
   - `total`: Total price for the item (quantity * price).
 
 ### Example Valid Invoice
-![Example Invoice](https://github.com/veriableharshal/Refrens-Backend-Assignment/blob/main/Redme_File_Images/Invoice_Page.png)
+![Example Invoice](https://github.com/veriableharshal/Refrens-Backend-Assignment/blob/main/Redme_File_Images/InvoicePage.png)
 
 ## Assumptions & Design Decisions
 1. **About Dataset:** Since I was not provided with dataset, I researched examples to implement as the dataset. All logic and validations are applied according to the dataset.
