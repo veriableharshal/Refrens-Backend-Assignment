@@ -1,8 +1,8 @@
-﻿Invoice Number,Date,Customer Name,Total Amount,Item Description,Item Quantity,Item Price,Item Total
-INV-001,20-01-2024,Ted Mosby,560,Widget A,2,50,100
-INV-001,20-01-2024,Ted Mosby,560,Widget B,1,150,150
-INV-001,20-01-2024,Ted Mosby,560,Widget C,3,70,210
-INV-001,20-01-2024,Ted Mosby,560,Widget D,1,100,100
+Invoice Number,Date,Customer Name,Total Amount,Item Description,Item Quantity,Item Price,Item Total
+INV-001,20-01-2024,Ted Mosby,560,Tool 1,2,50,100
+INV-001,20-01-2024,Ted Mosby,560,Tool 2,1,150,150
+INV-001,20-01-2024,Ted Mosby,560,Tool 3,3,70,210
+INV-001,20-01-2024,Ted Mosby,560,Tool 4,1,100,100
 INV-002,30-07-2024,Jane Smith,860,Gadget A,4,200,800
 INV-002,30-07-2024,Jane Smith,860,Gadget B,1,60,60
 INV-003,31-07-2024,Acme Corp,1500,Part A,10,50,500

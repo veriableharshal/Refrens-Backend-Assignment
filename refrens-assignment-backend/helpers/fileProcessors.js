@@ -12,7 +12,6 @@ const processCSV = (filePath, res) => {
     .pipe(csv())
     .on("data", (row) => {
       data.push(row);
-      console.log(row);
     })
     .on("end", () => {
       const refineData = data.map((row) => {
@@ -24,10 +23,10 @@ const processCSV = (filePath, res) => {
 
       const dataValidation = validateFileData(refineData);
 
-      console.log(dataValidation);
 
       const jsonData = convertToJSON(refineData);
-      console.log(jsonData[0]);
+     
+      console.log(jsonData)
 
       res.json({
         status: "OK",
@@ -53,8 +52,6 @@ const processExcel = (filePath, res) => {
       return res.status(400).send("Empty Excel file.");
     }
 
-    console.log(data);
-
     const headers = data[0];
 
     data.slice(1).forEach((row) => {
@@ -66,22 +63,19 @@ const processExcel = (filePath, res) => {
           const jsDate = XLSX.SSF.parse_date_code(value);
           const formattedDate = `${("0" + jsDate.d).slice(-2)}-${("0" + (jsDate.m + 1)).slice(-2)}-${jsDate.y}`;
           mapData[header] = formattedDate;
-          console.log(formattedDate);
         } else {
           mapData[header] = value.toString().trim();
         }
-        console.log(`${header}:${value}`);
       });
       dataRow.push(mapData);
     });
 
     const dataValidation = validateFileData(dataRow);
 
-    console.log(`${dataValidation.type} Data Validation`);
-
-    console.log(dataRow);
+ 
     const jsonData = convertToJSON(dataRow);
-    console.log(jsonData[0]);
+
+    console.log(jsonData)
 
     res.json({
       status: "OK",
